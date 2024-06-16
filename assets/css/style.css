@@ -1,8 +1,8 @@
 html {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #ffffff;
 }
 body {
   font-family: "Montserrat";
@@ -13,8 +13,9 @@ body {
   background-size: 100%;
 }
 
+/*  */
+/*  */
 /* Header CSS */
-
 .header {
   height: 60px;
   width: 100%;
@@ -22,8 +23,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-  top: 0px;
-  left: 0px;
 }
 .header a {
   color: white;
@@ -44,6 +43,12 @@ body {
   width: 100%;
   display: flex;
 }
+.content-header-tab ul {
+  display: flex;
+  align-self: center;
+  gap: 1.2rem;
+  list-style: none;
+}
 .content-header-tab-1 {
   width: 70%;
   height: 100%;
@@ -51,10 +56,15 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-.content-header-tab-1 .btn-header-1 {
+.btn-header-1 {
   color: white;
   text-decoration: none;
-  padding: 0 30px;
+  margin: 0 30px;
+  padding-bottom: 3px;
+  position: relative;
+}
+.btn-header-1:hover::before {
+  width: 100%;
 }
 .content-header-tab-2 {
   width: 30%;
@@ -95,21 +105,349 @@ body {
 .btn-call-hotline:hover {
   border-radius: 10px;
   background: #e0e0e0;
-  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.4), -10px -10px 30px rgba(255, 255, 255, 0.4);
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.4),
+    -10px -10px 30px rgba(255, 255, 255, 0.4);
   color: #000000;
-  transition: 0.7s;
-  border: none;
+  transition: 0.6s ease;
+  border: solid 1px white;
 }
 .btn-call-hotline:hover i {
   color: black;
-  transition: 0.7s;
+  transition: 0.6s ease;
   border: none;
 }
-
+/*  */
+/*  */
 /* End Header CSS */
 
-/* Thuôc tính riêng */
+/* main css */
+.web-main {
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+}
 
+/*  */
+/*  */
+/* Introduction-1 */
+.introduction-1 {
+  display: flex;
+  width: 1440px;
+  height: 100%;
+  margin: 50px auto;
+}
+.web-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name-title,
+.title,
+.text-infos {
+  margin-bottom: 10px;
+}
+.introduce .name-title {
+  font-size: 100px;
+  font-weight: 100;
+  margin: 0;
+  width: 100%;
+}
+.introduce .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  width: 100%;
+}
+.introduce .text-infos {
+  width: 100%;
+  line-height: 25px;
+  /* font-weight: 400; */
+}
+.img-demo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.img-demo-phone {
+}
+
+.buy-home {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+  color: white;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.buy-home:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: 0.6s;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+
+/* End Introduction-1 */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/* Introduction-2 */
+.introduction-2 {
+  display: flex;
+  width: 1440px;
+  height: 100%;
+  margin: 50px auto;
+}
+
+/* End Introduction-2 */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/* Introduction-3 */
+.introduction-3 {
+  display: flex;
+  width: 1440px;
+  height: 100%;
+  margin: 50px auto;
+}
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mockup-card {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mockup-card img {
+  width: 50%;
+}
+.content-whycard {
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+}
+.paragraph {
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+/* End Introduction-3 */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/* Introduction-4 */
+.introduction-4 {
+  display: flex;
+  width: 1440px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+/* End Introduction-4 */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/* Introduction 5 */
+.introduction-5 {
+  display: flex;
+  width: 1440px;
+  height: 100%;
+  margin: 50px auto;
+}
+.introduction-5__bigtitle {
+  width: 400px;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
+.introduction-5__title {
+  width: max-content;
+  text-align: center;
+}
+.introduction-5__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introduction-5__text {
+  align-items: center;
+  width: 50%;
+}
+.introduction-5__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.introduction-5__images img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.input-txt-5 {
+  width: 400px;
+  height: 30px;
+  margin: 20px 0;
+  padding: 8px 20px;
+}
+.input-label-5 {
+  margin: 25px 0;
+  padding-left: 10px;
+}
+
+.footer__social a{
+  font-size: 26px;
+  color: white;
+  margin: 20px 20px 20px 0px;
+  text-decoration: none;
+}
+/*End Introduction 5 */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*Footer*/
+.footer {
+  bottom: 0px;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.footer-main {
+  width: 1440px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.line-1px {
+  display: inline-block;
+  width: 1px;
+  height: 200px;
+  background-color: white;
+  margin: 20px;
+}
+
+.logo-footer {
+  width: 200px;
+}
+.tittle-logofooter {
+  font-size: 16px;
+  font-weight: 800;
+}
+.mc-form {
+  display: flex;
+}
+.mc-form button i {
+  padding: 10px;
+}
+.send-email-footer {
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.input-label-footer {
+  padding-left: 8px;
+}
+.input-txt-footer {
+  width: 280px;
+  height: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* End Footer */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+.input-group {
+  position: relative;
+}
+.input-group__input {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  outline: 2px solid #fff;
+  background-color: transparent;
+  transition: outline-color 250ms;
+}
+.input-group__input:focus {
+  outline-color: #3c50eb;
+}
+.input-group__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transform-origin: left;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 200ms;
+}
+.input-group__input:focus + .input-group__label,
+.input-group__input:valid + .input-group__label {
+  transform: translate(0, -30px) scale(0.8);
+}
+.decor-bot {
+  padding-bottom: 40px;
+  position: relative;
+}
+.decor-bot:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px; /* Độ dày của gạch chân */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(138, 138, 138); /* Màu của gạch chân */
+}
+.decor-small {
+  padding-bottom: 40px;
+  position: relative;
+}
+.decor-small:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px; /* Độ dày của gạch chân */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(138, 138, 138); /* Màu của gạch chân */
+}
 .fw-100 {
   font-weight: 700;
 }
@@ -155,57 +493,16 @@ body {
 .padd-60 {
   padding: 60px;
 }
-/*End Thuôc tính riêng */
-
-.introduction-2{
-  margin: 20px 0;
-  color: white;
+.w-1440px {
+  width: 1440px;
+}
+.w-100per {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.intro-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mockup-card{
+.w-50per {
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mockup-card img{
-  width: 70%;
-}
-.content-whycard{
-  max-width: 50%;
-  align-items: center;
-  text-align: center;
-}
-.paragraph{
-  justify-content: center;
-  align-items: center;
-  max-width: 70%;
-  text-align: left;
-  margin: 0 auto;
-}
-.footer{
-  bottom: 0px;
-  width: 100%;
-  height: 300px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 16px;
 }
 
-.width-30{
-  width: 30%;
-}
-
+/*  */
+/*  */
+/*End Thuôc tính riêng */
