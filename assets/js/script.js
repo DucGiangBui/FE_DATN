@@ -26,3 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
     window.addEventListener('scroll', checkVisibility);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const buyButton = document.getElementById('buy-header');
+    const introduceSection = document.querySelector('.introduction-5');
+
+    buyButton.addEventListener('click', function() {
+        introduceSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
