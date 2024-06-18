@@ -1,616 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Onetap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="box-content-header">
-        <div class="content-header-tab">
-          <div class="content-header-tab-1">
-            <a href="./index.html"
-              ><img class="logo-header" src="./assets/imgs/LOGO.png"
-            /></a>
-            <nav class="list-page">
-              <ul>
-                <li><a href="introduce" class="btn-header-1 link-line">GIỚI THIỆU</a></li>
-                <li><a href="orders" id="buy-header" class="btn-header-1 link-line">ĐẶT HÀNG</a></li>
-                <li><a href="contacts" class="btn-header-1 link-line">LIÊN HỆ</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="content-header-tab-2">
-            <a class="btn-call-hotline" href="tel://0833200319">
-              <i class="fa-solid fa-phone-volume"></i>
-              <p class="hotline fw-500">HOTLINE</p>
-            </a>
-            <a class="btn-header-2 fw-700" href="">ĐĂNG NHẬP</a>
+<head>
+  <title>Onetap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="box-content-header">
+      <div class="content-header-tab">
+        <div class="content-header-tab-1">
+          <a href="./index.html"><img class="logo-header" src="./assets/imgs/LOGO.png" /></a>
+          <nav class="list-page">
+            <ul>
+              <li><a href="#intro" class="btn-header-1 active link-line ">GIỚI THIỆU</a></li>
+              <li><a href="#orders" id="buy-header" class="btn-header-1 link-line">DEMO</a></li>
+              <li><a href="#contacts" class="btn-header-1 link-line">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-header-tab-2">
+          <a class="btn-call-hotline" href="tel://0833200319">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p class="hotline fw-500">HOTLINE</p>
+          </a>
+          <a class="btn-header-2 fw-700" href="">ĐĂNG NHẬP</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="web-main">
+    <section id="intro" class="introduction-1 lazy hidden-lazy">
+      <div class="web-main-content">
+        <div class="introduce">
+          <h1 class="name-title pd-b60">ONETAP</h1>
+          <h2 class="title mg-t-b-30">
+            DANH THIẾP ĐIỆN TỬ THÔNG MINH ĐẦU TIÊN TẠI VIỆT NAM
+          </h2>
+          <p class="text-infos mg-t-b-30">
+            Danh thiếp điện tử thông minh ONETAP là thẻ danh thiếp tích hợp
+            chip NFC, có thể sử dụng thay cho danh thiếp giấy truyền thống cho
+            phép bạn chia sẻ liên hệ với đối tác nhanh chóng và chuyên nghiệp.
+          </p>
+          <a href="#"><button class="buy-home">MUA NGAY</button></a>
+        </div>
+        <div class="img-demo">
+          <img class="img-demo-phone" src="./assets/imgs/iPhone 16.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="introduction-2"></section>
+    <section class="introduction-3 decor-bot lazy hidden-lazy">
+      <div class="intro-content">
+        <div class="mockup-card">
+          <img src="./assets/imgs/Mockup_Card.png" alt="" />
+        </div>
+        <div class="content-whycard">
+          <h1 class="title-whycard">LỢI ÍCH CỦA ONETAP?</h1>
+          <div class="paragraph">
+            <p class="p-whycard t-ju">
+              Card visit điện tử ONETAP được thiết kế độc đáo sang trọng
+            </p>
+            <p class="p-whycard t-ju">
+              Chia sẻ thông tin liên lạc chỉ với một chạm, không cần in ấn hay
+              mang theo card visit giấy
+            </p>
+            <p class="p-whycard t-ju">
+              Cập nhật thông tin liên lạc dễ dàng, mọi lúc mọi nơi.
+            </p>
+            <p class="p-whycard t-ju">
+              Góp phần bảo vệ môi trường bằng cách giảm thiểu việc sử dụng
+              card visit giấy.
+            </p>
           </div>
         </div>
       </div>
-    </header>
-    <main class="web-main">
-      <section id="introduce" class="introduction-1 lazy hidden-lazy">
-        <div class="web-main-content">
-          <div class="introduce">
-            <h1 class="name-title">ONETAP</h1>
-            <h2 class="title">
-              DANH THIẾP ĐIỆN TỬ THÔNG MINH ĐẦU TIÊN TẠI VIỆT NAM
-            </h2>
-            <p class="text-infos">
-              Danh thiếp điện tử thông minh ONETAP là thẻ danh thiếp tích hợp
-              chip NFC, có thể sử dụng thay cho danh thiếp giấy truyền thống cho
-              phép bạn chia sẻ liên hệ với đối tác nhanh chóng và chuyên nghiệp.
-            </p>
-            <a href="#"><button class="buy-home">MUA NGAY</button></a>
-          </div>
-          <div class="img-demo">
-            <img
-              class="img-demo-phone"
-              src="./assets/imgs/iPhone 16.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section class="introduction-2"></section>
-      <section class="introduction-3 decor-bot lazy hidden-lazy">
-        <div class="intro-content">
-          <div class="mockup-card">
-            <img src="./assets/imgs/Mockup_Card.png" alt="" />
-          </div>
-          <div class="content-whycard">
-            <h1 class="title-whycard">LỢI ÍCH CỦA ONETAP?</h1>
-            <div class="paragraph">
-              <p class="p-whycard t-ju">
-                Card visit điện tử ONETAP được thiết kế độc đáo sang trọng
+    </section>
+    <section class="introduction-4 decor-bot">
+      <h1 class="introduction4-tittle font-title t-cent fw-300">
+        ĐÁNH GIÁ CỦA KHÁCH HÀNG
+      </h1>
+      <div class="scroll-comment">
+        <div class="cont-scroll">
+          <div class="scroll_infi">
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Phuong Diep</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt quas assumenda animi odio. Officiis illo corporis
+                porro dignissimos nihil, soluta nemo.
               </p>
-              <p class="p-whycard t-ju">
-                Chia sẻ thông tin liên lạc chỉ với một chạm, không cần in ấn hay
-                mang theo card visit giấy
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Xuan Linh</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Rerum quod consequatur nemo facilis fugiat qui officiis dolor
+                illo molestias ullam.
               </p>
-              <p class="p-whycard t-ju">
-                Cập nhật thông tin liên lạc dễ dàng, mọi lúc mọi nơi.
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Minh Duc</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima beatae, veniam fuga obcaecati architecto necessitatibus
+                cupiditate harum labore, ab animi velit.
               </p>
-              <p class="p-whycard t-ju">
-                Góp phần bảo vệ môi trường bằng cách giảm thiểu việc sử dụng
-                card visit giấy.
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Duc Giang</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus voluptate, fugit illo ut repudiandae assumenda itaque
+                quis! Reprehenderit dolorem natus
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Bich Hai</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                debitis, cumque rem ullam, ex aperiam aliquid sint amet harum
+                fuga animi dolore officiis qui.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Luu Thang</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem omnis rem mollitia possimus molestiae, laudantium
+                error ad placeat autem, iure neque.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Phan Ha</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                tempore, inventore doloribus minus praesentium cupiditate
+                architecto sapiente, hic error dolorum ut.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Do Phuong</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Itaque sequi corporis accusamus velit, sint dignissimos fuga
+                necessitatibus enim, cupiditate animi eos.
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="introduction-4 decor-bot">
-        <h1 class="introduction4-tittle font-title t-cent fw-300">
-          ĐÁNH GIÁ CỦA KHÁCH HÀNG
-        </h1>
-        <div class="scroll-comment">
-          <div class="cont-scroll">
-            <div class="scroll_infi">
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Phuong Diep</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt quas assumenda animi odio. Officiis illo corporis
-                  porro dignissimos nihil, soluta nemo.
-                </p>
+          <div class="scroll_infi">
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Phuong Diep</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Xuan Linh</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Rerum quod consequatur nemo facilis fugiat qui officiis dolor
-                  illo molestias ullam.
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Minh Duc</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima beatae, veniam fuga obcaecati architecto necessitatibus
-                  cupiditate harum labore, ab animi velit.
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Duc Giang</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus voluptate, fugit illo ut repudiandae assumenda itaque
-                  quis! Reprehenderit dolorem natus
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Bich Hai</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                  debitis, cumque rem ullam, ex aperiam aliquid sint amet harum
-                  fuga animi dolore officiis qui.
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Luu Thang</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem omnis rem mollitia possimus molestiae, laudantium
-                  error ad placeat autem, iure neque.
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Phan Ha</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  tempore, inventore doloribus minus praesentium cupiditate
-                  architecto sapiente, hic error dolorum ut.
-                </p>
-              </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Do Phuong</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Itaque sequi corporis accusamus velit, sint dignissimos fuga
-                  necessitatibus enim, cupiditate animi eos.
-                </p>
-              </div>
+              <p class="item-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt quas assumenda animi odio. Officiis illo corporis
+                porro dignissimos nihil, soluta nemo.
+              </p>
             </div>
-            <div class="scroll_infi">
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Phuong Diep</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt quas assumenda animi odio. Officiis illo corporis
-                  porro dignissimos nihil, soluta nemo.
-                </p>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Xuan Linh</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Xuan Linh</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Rerum quod consequatur nemo facilis fugiat qui officiis dolor
-                  illo molestias ullam.
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Rerum quod consequatur nemo facilis fugiat qui officiis dolor
+                illo molestias ullam.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Minh Duc</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Minh Duc</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima beatae, veniam fuga obcaecati architecto necessitatibus
-                  cupiditate harum labore, ab animi velit.
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima beatae, veniam fuga obcaecati architecto necessitatibus
+                cupiditate harum labore, ab animi velit.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Duc Giang</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Duc Giang</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus voluptate, fugit illo ut repudiandae assumenda itaque
-                  quis! Reprehenderit dolorem natus
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus voluptate, fugit illo ut repudiandae assumenda itaque
+                quis! Reprehenderit dolorem natus
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Bich Hai</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Bich Hai</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                  debitis, cumque rem ullam, ex aperiam aliquid sint amet harum
-                  fuga animi dolore officiis qui.
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                debitis, cumque rem ullam, ex aperiam aliquid sint amet harum
+                fuga animi dolore officiis qui.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Luu Thang</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Luu Thang</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem omnis rem mollitia possimus molestiae, laudantium
-                  error ad placeat autem, iure neque.
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem omnis rem mollitia possimus molestiae, laudantium
+                error ad placeat autem, iure neque.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Phan Ha</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Phan Ha</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  tempore, inventore doloribus minus praesentium cupiditate
-                  architecto sapiente, hic error dolorum ut.
-                </p>
+              <p class="item-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                tempore, inventore doloribus minus praesentium cupiditate
+                architecto sapiente, hic error dolorum ut.
+              </p>
+            </div>
+            <div class="item-scroll">
+              <img class="item-img" src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png" alt="" />
+              <h1 class="item-name">Do Phuong</h1>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="item-scroll">
-                <img
-                  class="item-img"
-                  src="./assets/imgs/male_boy_person_people_avatar_icon_159358.png"
-                  alt=""
-                />
-                <h1 class="item-name">Do Phuong</h1>
-                <div class="item-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="item-content">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Itaque sequi corporis accusamus velit, sint dignissimos fuga
-                  necessitatibus enim, cupiditate animi eos.
-                </p>
-              </div>
+              <p class="item-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Itaque sequi corporis accusamus velit, sint dignissimos fuga
+                necessitatibus enim, cupiditate animi eos.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <section id="orders" class="introduction-5 decor-bot lazy hidden-lazy">
-        <div class="introduction-5__content w-1440px">
-          <div class="introduction-5__text w-50per">
-            <h1 class="introduction-5__bigtitle">ĐẶT HÀNG</h1>
-            <h1 class="introduction-5__title">NHẬP THÔNG TIN IN THẺ CỦA BẠN</h1>
-            <div class="input-group">
-              <input
-                type="text"
-                id="input-name1"
-                class="input-group__input input-txt-5"
-                required
-              />
-              <label for="fname" class="input-group__label input-label-5"
-                >Họ và tên</label
-              >
-            </div>
-            <div class="input-group">
-              <input
-                type="text"
-                id="position"
-                class="input-group__input input-txt-5"
-                required
-              />
-              <label for="position" class="input-group__label input-label-5"
-                >Chức vụ</label
-              >
-            </div>
-            <div id="decoration-form1" class="decoration-form"></div>
-            <input
-              id="want-buy"
-              class="want-buy"
-              type="submit"
-              value="Tôi muốn đặt hàng"
-            />
-            <div id="info-ship" class="info-ship">
-              <h1 class="tittle-form">Thông tin giao hàng</h1>
+      </div>
+    </section>
+    <section id="orders" class="introduction-5 decor-bot">
+      <div class="introduction-5__content w-1440px">
+        <div class="introduction-5__text w-50per">
+          <h1 class="introduction-5__bigtitle">DEMO</h1>
+          <h1 class="introduction-5__title">NHẬP THÔNG TIN CỦA BẠN</h1>
+          <div class="input-group">
+            <input type="text" id="input-name1" class="input-group__input input-txt-5" required />
+            <label for="fname" class="input-group__label input-label-5">Họ và tên</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="position" class="input-group__input input-txt-5" required />
+            <label for="position" class="input-group__label input-label-5">Chức vụ</label>
+          </div>
+        </div>
+        <div class="introduction-select">
+          <ul>
+            <li class="select-items">
+              <div class="sub-items">
+                <div class="checkbox-wrapper">
+                  <input id="_checkbox-1" type="checkbox">
+                  <label for="_checkbox-1">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+                <img src="./assets/imgs/MatSau@4x.png" alt="" class="img-item mg-10">
+              </div>
+            </li>
+            <li class="select-items">
+              <div class="sub-items">
+                <div class="checkbox-wrapper">
+                  <input id="_checkbox-2" type="checkbox">
+                  <label for="_checkbox-2">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+                <img src="./assets/imgs/MatSau@4x.png" alt="" class="img-item mg-10">
+              </div>
+            </li>
+            <li class="select-items">
+              <div class="sub-items">
+                <div class="checkbox-wrapper">
+                  <input id="_checkbox-3" type="checkbox">
+                  <label for="_checkbox-3">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+                <img src="./assets/imgs/MatSau@4x.png" alt="" class="img-item mg-10">
+              </div>
+            </li>
+            <li class="select-items">
+              <div class="sub-items">
+                <div class="checkbox-wrapper">
+                  <input id="_checkbox-4" type="checkbox">
+                  <label for="_checkbox-4">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+                <img src="./assets/imgs/MatSau@4x.png" alt="" class="img-item mg-10">
+              </div>
+            </li>
+            <li class="select-items">
+              <div class="sub-items">
+                <div class="checkbox-wrapper">
+                  <input id="_checkbox-5" type="checkbox">
+                  <label for="_checkbox-5">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+                <img src="./assets/imgs/MatSau@4x.png" alt="" class="img-item mg-10">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="introduction-5__images w-50per">
+          <img src="./assets/imgs/MatSau@4x.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="contacts"  class="introduction-6">
+      contact
+    </section>
+    <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top">Top</button>
+  </main>
+  <footer class="footer">
+    <div class="footer-main">
+      <section class="footer-content1 width-30">
+        <div class="">
+          <div class="footer-widget">
+            <a href="index.html" class="footer-widget__Logo">
+              <img class="logo-footer" src="./assets/imgs/LOGO.png" />
+            </a>
+            <p class="tittle-logofooter">DANH THIẾP ĐIỆN TỬ THÔNG MINH</p>
+            <form action="#" class="mc-form">
               <div class="input-group">
-                <input
-                  id="want-buy"
-                  type="text"
-                  id="fname"
-                  class="input-group__input input-txt-5"
-                  required
-                />
-                <label
-                  for="fname"
-                  id="input-name2"
-                  class="input-group__label input-label-5"
-                  >Họ và tên người nhận</label
-                >
+                <input type="text" id="position" class="input-group__input input-txt-footer" required />
+                <label for="position" class="input-group__label input-label-footer">Email</label>
               </div>
-              <div class="input-group">
-                <input
-                  type="text"
-                  id="position"
-                  class="input-group__input input-txt-5"
-                  required
-                />
-                <label for="position" class="input-group__label input-label-5"
-                  >Địa chỉ nhận hàng</label
-                >
-              </div>
-              <div class="input-group">
-                <input
-                  type="text"
-                  id="fname"
-                  class="input-group__input input-txt-5"
-                  required
-                />
-                <label for="fname" class="input-group__label input-label-5"
-                  >Số điện thoại</label
-                >
-              </div>
-              <span class="buy-alert"></span>
-              <div class="decoration-form"></div>
-              <input
-                id="btn-order"
-                class="buy-home mg-t-b-10"
-                type="button"
-                value="ĐẶT HÀNG"
-              />
+              <button type="submit" class="send-email-footer">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="footer__social">
+              <a href="#" class="fab fa-facebook-square"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest-p"></a>
+              <a href="#" class="fab fa-instagram"></a>
             </div>
-          </div>
-          <div class="introduction-5__images w-50per">
-            <img src="./assets/imgs/MatSau@4x.png" alt="" />
           </div>
         </div>
       </section>
-      <section class="introduction-6"></section>
-    </main>
-    <footer class="footer">
-      <div class="footer-main">
-        <section class="footer-content1 width-30">
-          <div class="">
-            <div class="footer-widget">
-              <a href="index.html" class="footer-widget__Logo">
-                <img class="logo-footer" src="./assets/imgs/LOGO.png" />
-              </a>
-              <p class="tittle-logofooter">DANH THIẾP ĐIỆN TỬ THÔNG MINH</p>
-              <form action="#" class="mc-form">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="position"
-                    class="input-group__input input-txt-footer"
-                    required
-                  />
-                  <label
-                    for="position"
-                    class="input-group__label input-label-footer"
-                    >Email</label
-                  >
-                </div>
-                <button type="submit" class="send-email-footer">
-                  <i class="fa-solid fa-paper-plane"></i>
-                </button>
-              </form>
-              <div class="footer__social">
-                <a href="#" class="fab fa-facebook-square"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-pinterest-p"></a>
-                <a href="#" class="fab fa-instagram"></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <span class="line-1px"></span>
-        <section class="footer-content2 width-30">
-          <div class="">
-            <div class="footer-widget footer-widget__links-widget">
-              <h3 class="footer-widget__title">Links</h3>
-              <ul class="links footer-widget__contact">
-                <li id="link">
-                  <i class="fa-solid fa-chevron-right"></i>
-                  <a class="links-item" href="#">Our Projects</a>
-                </li>
-                <li id="link">
-                  <i class="fa-solid fa-chevron-right"></i>
-                  <a class="links-item" href="#">About us</a>
-                </li>
-                <li id="link">
-                  <i class="fa-solid fa-chevron-right"></i>
-                  <a class="links-item" href="#">New Campaign</a>
-                </li>
-                <li id="link">
-                  <i class="fa-solid fa-chevron-right"></i>
-                  <a class="links-item" href="#">Upcoming Events</a>
-                </li>
-                <li id="link">
-                  <i class="fa-solid fa-chevron-right"></i>
-                  <a class="links-item" href="#">Volunteers</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <span class="line-1px"></span>
-        <section class="footer-content3 width-30">
-          <div class="">
-            <h3 class="footer-widget__title">Contact</h3>
-            <ul class="list-unstyled footer-widget__contact">
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:0833200319">0833 200 319</a>
+      <span class="line-1px"></span>
+      <section class="footer-content2 width-30">
+        <div class="">
+          <div class="footer-widget footer-widget__links-widget">
+            <h3 class="footer-widget__title">Links</h3>
+            <ul class="links footer-widget__contact">
+              <li id="link">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a class="links-item" href="#">Our Projects</a>
               </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a
-                  href="/cdn-cgi/l/email-protection#442a2121202c21283404272b2934252a3d6a272b29"
-                  ><span
-                    class="__cf_email__"
-                    data-cfemail="27494242434f424b576744484a5746495e0944484a"
-                    >[email&#160;protected]</span
-                  ></a
-                >
+              <li id="link">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a class="links-item" href="#">About us</a>
               </li>
-              <li>
-                <i class="fa-solid fa-location-pin"></i>
-                <a href="#">175 - Tay Son - Dong Da - Ha Noi</a>
+              <li id="link">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a class="links-item" href="#">New Campaign</a>
+              </li>
+              <li id="link">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a class="links-item" href="#">Upcoming Events</a>
+              </li>
+              <li id="link">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a class="links-item" href="#">Volunteers</a>
               </li>
             </ul>
           </div>
-        </section>
-      </div>
-    </footer>
+        </div>
+      </section>
+      <span class="line-1px"></span>
+      <section class="footer-content3 width-30">
+        <div class="">
+          <h3 class="footer-widget__title">Contact</h3>
+          <ul class="list-unstyled footer-widget__contact">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:0833200319">0833 200 319</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="/cdn-cgi/l/email-protection#442a2121202c21283404272b2934252a3d6a272b29"><span
+                  class="__cf_email__"
+                  data-cfemail="27494242434f424b576744484a5746495e0944484a">[email&#160;protected]</span></a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-pin"></i>
+              <a href="#">175 - Tay Son - Dong Da - Ha Noi</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
 
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
