@@ -32,22 +32,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-      event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ a
+      const testtarget = this.getAttribute("href")
+      if (testtarget == "#intro" || testtarget == "#demo" || testtarget == "#contacts") {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ a
 
-      // Xóa lớp active khỏi tất cả các liên kết
-      navLinks.forEach((navLink) => navLink.classList.remove("active"));
+        // Xóa lớp active khỏi tất cả các liên kết
+        navLinks.forEach((navLink) => navLink.classList.remove("active"));
 
-      // Thêm lớp active vào liên kết được nhấn
-      this.classList.add("active");
+        // Thêm lớp active vào liên kết được nhấn
+        this.classList.add("active");
 
-      // Lấy id của section tương ứng
-      const targetId = this.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
+        // Lấy id của section tương ứng
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
 
-      // Cuộn đến section tương ứng
-      targetSection.scrollIntoView({
-        behavior: "smooth",
-      });
+        // Cuộn đến section tương ứng
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
     });
   });
 });
@@ -180,36 +184,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Function to update the image
   function updateImage(src) {
-      cardImg.style.backgroundImage = `url(${src})`;
+    cardImg.style.backgroundImage = `url(${src})`;
   }
 
   // Select the first image and checkbox by default
   if (listItems.length > 0) {
-      listItems[0].classList.add('selected');
-      checkboxes[0].checked = true;
-      updateImage(listItems[0].dataset.src);
+    listItems[0].classList.add('selected');
+    checkboxes[0].checked = true;
+    updateImage(listItems[0].dataset.src);
   }
 
   // Add event listeners to checkboxes
   checkboxes.forEach((checkbox, index) => {
-      checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-              // Uncheck other checkboxes
-              checkboxes.forEach((cb, idx) => {
-                  if (idx !== index) cb.checked = false;
-              });
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        // Uncheck other checkboxes
+        checkboxes.forEach((cb, idx) => {
+          if (idx !== index) cb.checked = false;
+        });
 
-              // Update the image and highlight the selected item
-              listItems.forEach((item, idx) => {
-                  if (idx === index) {
-                      item.classList.add('selected');
-                      updateImage(item.dataset.src);
-                  } else {
-                      item.classList.remove('selected');
-                  }
-              });
+        // Update the image and highlight the selected item
+        listItems.forEach((item, idx) => {
+          if (idx === index) {
+            item.classList.add('selected');
+            updateImage(item.dataset.src);
+          } else {
+            item.classList.remove('selected');
           }
-      });
+        });
+      }
+    });
   });
 
   // Update name and position in the card
@@ -219,10 +223,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const cardPosition = document.getElementById('card-position');
 
   inputName.addEventListener('input', () => {
-      cardHolderName.textContent = inputName.value;
+    cardHolderName.textContent = inputName.value;
   });
 
   inputPosition.addEventListener('input', () => {
-      cardPosition.textContent = inputPosition.value;
+    cardPosition.textContent = inputPosition.value;
   });
 });
+
+
+function login() {
+  var username = document.getElementById('username').value.trim();
+  var password = document.getElementById('password').value.trim();
+  var remember = document.getElementById('remember').checked;
+  var alertSpan = document.querySelector('.login-alert');
+
+  if (username === '' || password === '') {
+    alertSpan.textContent = 'Vui lòng nhập đầy đủ thông tin!';
+  } else if (username !== 'admin' || password !== 'admin') {
+    alertSpan.textContent = 'Tài khoản hoặc mật khẩu không chính xác!';
+  } else {
+    if (remember) {
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+    } else {
+      localStorage.removeItem('username');
+      localStorage.removeItem('password');
+    }
+    window.location.href = 'info_user.html';
+  }
+}
+
+// Tự động điền tên đăng nhập và mật khẩu nếu chúng đã được lưu trữ trong localStorage
+window.onload = function () {
+  var storedUsername = localStorage.getItem('username');
+  var storedPassword = localStorage.getItem('password');
+
+  if (storedUsername && storedPassword) {
+    document.getElementById('username').value = storedUsername;
+    document.getElementById('password').value = storedPassword;
+    document.getElementById('remember').checked = true;
+  }
+}
