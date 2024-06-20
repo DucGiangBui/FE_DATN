@@ -173,86 +173,56 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const listItems = document.querySelectorAll(".select-items");
-  const cardImg = document.getElementById("card-img");
-  const checkboxes = document.querySelectorAll(".checkbox-wrapper input");
+document.addEventListener('DOMContentLoaded', (event) => {
+  const listItems = document.querySelectorAll('.select-items');
+  const cardImg = document.getElementById('card-img');
+  const checkboxes = document.querySelectorAll('.checkbox-wrapper input');
 
   // Function to update the image
   function updateImage(src) {
-    cardImg.style.backgroundImage = `url(${src})`;
+      cardImg.style.backgroundImage = `url(${src})`;
   }
 
   // Select the first image and checkbox by default
   if (listItems.length > 0) {
-    listItems[0].classList.add("selected");
-    checkboxes[0].checked = true;
-    updateImage(listItems[0].dataset.src);
+      listItems[0].classList.add('selected');
+      checkboxes[0].checked = true;
+      updateImage(listItems[0].dataset.src);
   }
 
   // Add event listeners to checkboxes
   checkboxes.forEach((checkbox, index) => {
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
-        // Uncheck other checkboxes
-        checkboxes.forEach((cb, idx) => {
-          if (idx !== index) cb.checked = false;
-        });
+      checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+              // Uncheck other checkboxes
+              checkboxes.forEach((cb, idx) => {
+                  if (idx !== index) cb.checked = false;
+              });
 
-        // Update the image and highlight the selected item
-        listItems.forEach((item, idx) => {
-          if (idx === index) {
-            item.classList.add("selected");
-            updateImage(item.dataset.src);
-          } else {
-            item.classList.remove("selected");
+              // Update the image and highlight the selected item
+              listItems.forEach((item, idx) => {
+                  if (idx === index) {
+                      item.classList.add('selected');
+                      updateImage(item.dataset.src);
+                  } else {
+                      item.classList.remove('selected');
+                  }
+              });
           }
-        });
-      }
-    });
+      });
   });
 
   // Update name and position in the card
-  const inputName = document.getElementById("input-name1");
-  const inputPosition = document.getElementById("input-position");
-  const cardHolderName = document.getElementById("card-holder-name");
-  const cardPosition = document.getElementById("card-position");
+  const inputName = document.getElementById('input-name1');
+  const inputPosition = document.getElementById('input-position');
+  const cardHolderName = document.getElementById('card-holder-name');
+  const cardPosition = document.getElementById('card-position');
 
-  inputName.addEventListener("input", (event) => {
-    updateTextWithEffect(cardHolderName, event.target.value);
+  inputName.addEventListener('input', () => {
+      cardHolderName.textContent = inputName.value;
   });
 
-  inputPosition.addEventListener("input", (event) => {
-    const formattedText = capitalizeFirstLetter(event.target.value);
-    updateTextWithEffect(cardPosition, formattedText);
+  inputPosition.addEventListener('input', () => {
+      cardPosition.textContent = inputPosition.value;
   });
-
-  function updateTextWithEffect(element, text) {
-    const currentLength = element.childNodes.length;
-    const newText = text.split("").map((char, index) => {
-      const span = document.createElement("span");
-      span.textContent = char === " " ? "\u00A0" : char; // Preserve spaces
-      if (index >= currentLength) {
-        span.classList.add("character", "new");
-      } else {
-        span.classList.add("character");
-      }
-      return span;
-    });
-
-    // Clear existing content and append new text nodes
-    element.innerHTML = "";
-    newText.forEach((span) => element.appendChild(span));
-
-    // Remove 'new' class after animation completes
-    newText.forEach((span) => {
-      span.addEventListener("animationend", () => {
-        span.classList.remove("new");
-      });
-    });
-  }
-
-  function capitalizeFirstLetter(text) {
-    return text.replace(/\b\w/g, (firstChar) => firstChar.toUpperCase());
-  }
 });
