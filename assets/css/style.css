@@ -938,6 +938,19 @@ body {
 
 /*  */
 /*  */
+/* Orders*/
+.introduction-5__title .btn-ordes{
+
+}
+.btn-ordes{
+  display: flex;
+  margin: 0 auto;
+}
+/* End orders */
+/*  */
+/*  */
+/*  */
+/*  */
 /*Footer*/
 .footer {
   bottom: 0px;
@@ -951,17 +964,17 @@ body {
   color: white;
   font-size: 16px;
 }
-
-.width-30 {
-  width: 30%;
-}
-
 .footer-main {
   width: 1440px;
   display: flex;
   justify-self: center;
   align-items: center;
 }
+.width-30 {
+  width: 30%;
+}
+
+
 
 .line-1px {
   display: inline-block;
@@ -978,47 +991,38 @@ body {
 .tittle-logofooter {
   font-size: 16px;
   font-weight: 800;
+  padding-bottom: 30px;
 }
 
 .mc-form {
   display: flex;
+  width: 100%;
 }
 
 .mc-form button i {
-  padding: 10px;
-}
-
-.send-email-footer {
-  margin-left: 20px;
-  border-radius: 10px;
-  border: 2px solid white;
-  color: white;
-  background: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.send-email-footer::before {
-  cursor: pointer;
-  background: #ffffff;
-  color: #000000;
-  transition: 0.6s;
-  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  /* padding: 10px; */
 }
 
 .input-label-footer {
   padding-left: 8px;
+  padding-top: 4px;
 }
 
 .input-txt-footer {
-  width: 280px;
-  height: 20px;
+  width: 85%;
+  height: 22px;
   padding: 10px 20px;
   font-size: 16px;
 }
 .footer-contacts ul{
  list-style: none;
  color: white;
+}
+.content1-main{
+  width: 100%;
+}
+.footer-widget{
+  width: 100%;
 }
 .footer-widget__contact{
   padding: 0;
@@ -1046,6 +1050,10 @@ body {
  .footer-widget__title{
   margin-top: 0;
  }
+ .mc-form{
+  width: 100%;
+  align-items: center;
+ }
 /* End Footer */
 /*  */
 /*  */
@@ -1062,6 +1070,7 @@ body {
   color: #fff;
   font-size: 18;
   border: none;
+  /* width: 85%; */
   border-radius: 10px;
   outline: 1px solid #fff;
   background-color: transparent;
